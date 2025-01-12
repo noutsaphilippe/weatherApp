@@ -1,0 +1,280 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /*background-color: #f4f4f4;*/
+    background-color: #2e1010;
+}
+/*------------------------for fun-----------------------------------*/
+.box {
+    display: grid;
+    grid-template-rows: 100px 80px 210px 100px;
+    grid-area: 100px;
+    position: relative;
+    justify-content: center;
+    margin-top: 130px;
+    margin-left: 450px;
+    text-align: center;
+    width: 600px;
+    height: 520px;
+    border: 2px solid lightgray;
+    background-image: linear-gradient(to top, rgb(250, 250, 173) 30%, rgb(196, 235, 251) 30%, rgb(107, 204, 243) 40% );
+}
+.box .div-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.box .div-input .input {
+    border-color: rgb(245, 245, 245);
+    margin-top: 30px;
+    padding: 7px 27px;
+    margin-right: 165px;
+    outline: none;
+}
+.box .div-input .button {
+    padding: 10px 25px;
+    background-color: rgb(51, 51, 255);
+    border-color: #f4f4f4;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    border: none;
+}
+.box .div-input .button:hover {
+    background-color: white;
+    border-color: rgb(51, 51, 255);
+    color:rgb(51, 51, 255);
+    border-style: groove;
+}
+.div-city h1 {
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+.div-city p {
+    color: red;
+    font-weight: 600;
+    font-size: 12px;
+}
+.box .div-parameter img {
+    width: 110px;
+    height: 80px;
+}
+.box .div-char {
+    display: flex;
+    border-color: lightgray;
+    text-align: center;
+    column-gap: 10px;
+}
+.box .div-char span{
+    width: 180px;
+    background-color: lightgray;
+    padding: 40px 40px 40px 0px;
+}
+.div-carousel {
+    position: absolute;
+    justify-content: center;
+    overflow: hidden;
+    width: 563px;
+    margin-top: 10px;
+    border: 2px solid rgb(234, 234, 234);
+}
+.carousel {
+    display: flex;
+}
+.carousel p {
+    font-size: 21px;
+    font-weight: 600;
+    color: rgb(22, 95, 95);
+    width: 130px;
+    height: 35px;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: animationCity;  
+}
+.carousel .city {
+    padding: 3px 50px;
+}
+
+@keyframes animationCity {
+    0% {
+        transform: translateX(0);
+    }
+    8% {
+        transform: translateX(-130px);
+    }
+    16% {
+        transform: translateX(-260px);
+    }
+    24% {
+        transform: translateX(-390px);
+    }
+    32% {
+        transform: translateX(-520px);
+    }
+    40% {
+        transform: translateX(-650px);
+    }
+    48% {
+        transform: translateX(-780px);
+    }
+    56% {
+        transform: translateX(-910px);
+    }
+    64% {
+        transform: translateX(-1040px);
+    }
+    72% {
+        transform: translateX(-1170px);
+    }
+    80% {
+        transform: translateX(-1300px);
+    }
+    90% {
+        transform: translateX(-1430px);
+    }  
+    100% {
+        transform: translateX(-1560px);
+    } 
+
+}
+
+/*--------------------real case-----------------------------------------------*/
+.boxRC {
+    display: grid;
+    grid-template-rows: 100px 80px 210px 100px;
+    grid-area: 100px;
+    position: relative;
+    justify-content: center;
+    margin-top: 130px;
+    margin-left: 450px;
+    text-align: center;
+    width: 600px;
+    height: 520px;
+    border: 2px solid rgb(211, 211, 211);
+    box-shadow: 15px 15px 15px rgb(84, 84, 84);
+    background-image: linear-gradient(to top, rgb(251, 251, 208), rgb(249, 249, 166), rgb(215, 238, 246)40%, rgb(207, 238, 251) 30%);
+}
+.boxRC .div-inputRC {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.boxRC .div-inputRC .inputRC {
+    border-color: rgb(245, 245, 245);
+    margin-top: 30px;
+    padding: 7px 27px;
+    margin-right: 165px;
+    outline: none;
+}
+.boxRC .div-inputRC .buttonRC {
+    padding: 10px 25px;
+    background-color: rgb(51, 51, 255);
+    border-color: #f4f4f4;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    border: none;
+}
+.boxRC .div-inputRC .buttonRC:hover {
+    background-color: white;
+    border-color: rgb(51, 51, 255);
+    color:rgb(51, 51, 255);
+    border-style: groove;
+}
+.boxRC .div-parameterRC img {
+    width: 110px;
+    height: 80px;
+}
+.div-cityRC h1 {
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+.div-cityRC p {
+    color: red;
+    font-weight: 600;
+    font-size: 12px;
+}
+.boxRC .div-charRC {
+    display: flex;
+    border-color: lightgray;
+    text-align: center;
+    column-gap: 10px;
+}
+.boxRC .div-charRC span {
+    width: 180px;
+    background-color: lightgray;
+    padding: 40px 40px 40px 0px;
+}
+.div-carouselRC {
+    position: absolute;
+    justify-content: center;
+    overflow: hidden;
+    width: 563px;
+    margin-top: 10px;
+    border: 2px solid rgb(234, 234, 234);
+}
+.carouselRC {
+    display: flex;
+}
+.carouselRC p {
+    font-size: 21px;
+    font-weight: 600;
+    color: rgb(22, 95, 95);
+    width: 130px;
+    height: 35px;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: animationCity;  
+}
+.carouselRC .city {
+    padding: 3px 50px;
+}
+
+@keyframes animationCity {
+    0% {
+        transform: translateX(0);
+    }
+    8% {
+        transform: translateX(-130px);
+    }
+    16% {
+        transform: translateX(-260px);
+    }
+    24% {
+        transform: translateX(-390px);
+    }
+    32% {
+        transform: translateX(-520px);
+    }
+    40% {
+        transform: translateX(-650px);
+    }
+    48% {
+        transform: translateX(-780px);
+    }
+    56% {
+        transform: translateX(-910px);
+    }
+    64% {
+        transform: translateX(-1040px);
+    }
+    72% {
+        transform: translateX(-1170px);
+    }
+    80% {
+        transform: translateX(-1300px);
+    }
+    90% {
+        transform: translateX(-1430px);
+    }  
+    100% {
+        transform: translateX(-1560px);
+    } 
+
+}
