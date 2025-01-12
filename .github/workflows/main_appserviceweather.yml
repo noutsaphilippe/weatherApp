@@ -54,4 +54,4 @@ jobs:
           app-name: 'appserviceweather'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9090A36A10E04DE78585AC07C60CCE2E }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BA2EF9C5CFB346F9BB2FD042B649CA5C }}
